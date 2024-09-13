@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="menu-navegacion">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#entradas">Entradas</a></li>
+                <li><a href="#platos-principales">Platos Principales</a></li>
+                <li><a href="#postres">Postres</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="seccion-busqueda">
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar recetas..." id="barra-busqueda">
+        </div>
+    </section>
+
+    <main>
+        <section id="entradas" class="grid-recetas">
+            <div class="tarjeta-receta" onclick="mostrarDetalles(this)">
+                <img src="img/Bruschetta de Tomate y Albahaca.jpg" alt="Receta 1">
+                <h3>Bruschetta de Tomate y Albahaca</h3>
+                <p>Esta clásica bruschetta italiana es una combinación fresca y sabrosa de tomates jugosos, albahaca aromática y ajo, servida sobre pan crujiente. Perfecta como aperitivo ligero o para acompañar una comida.</p>
+                <div class="detalles-receta">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>Pan de baguette</li>
+                        <li>Tomates</li>
+                        <li>Albahaca</li>
+                        <li>Ajo</li>
+                        <li>Aceite de oliva</li>
+                        <li>Sal</li>
+                        <li>Pimienta</li>
+                    </ul>
+                    <h4>Pasos</h4>
+                    <p>1-Tuesta las rebanadas de pan. 2-Mezcla tomates picados, albahaca, ajo picado, aceite de oliva, sal y pimienta. 3-Coloca la mezcla sobre el pan tostado y sirve.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-receta" onclick="mostrarDetalles(this)">
+                <img src="img/Guacamole.jpg" alt="Receta 2">
+                <h3>Guacamole</h3>
+                <p>Este guacamole es un dip cremoso y sabroso, ideal para acompañar chips o como complemento en tacos. Su mezcla de aguacates maduros, cebolla y cilantro ofrece un sabor fresco y vibrante.</p>
+                <div class="detalles-receta">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>Aguacates</li>
+                        <li>Cebolla</li>
+                        <li>Tomate</li>
+                        <li>Cilantro</li>
+                        <li>Limón</li>
+                        <li>Sal</li>
+                        <li>Pimienta</li>
+                    </ul>
+                    <h4>Pasos</h4>
+                    <p>1-Tritura los aguacates. 2-Mezcla con cebolla, tomate, cilantro, jugo de limón, sal y pimienta. 3-Sirve con totopos o como acompañamiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="platos-principales" class="grid-recetas">
+            <div class="tarjeta-receta" onclick="mostrarDetalles(this)">
+                <img src="img/Spaghetti Aglio e Olio.jpg" alt="Receta 3">
+                <h3>Spaghetti Aglio e Olio</h3>
+                <p>Un plato italiano simple y elegante, el Spaghetti Aglio e Olio combina pasta con ajo dorado en aceite de oliva y un toque de guindilla. Es una opción rápida y deliciosa para una comida entre semana.</p>
+                <div class="detalles-receta">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>Espagueti</li>
+                        <li>Ajo</li>
+                        <li>Aceite de oliva</li>
+                        <li>Guindilla (opcional)</li>
+                        <li>Perejil</li>
+                        <li>Sal</li>
+                        <li>Pimienta</li>
+                    </ul>
+                    <h4>Pasos</h4>
+                    <p>1-Cocina el espagueti según las instrucciones. 2-Sofríe ajo en aceite de oliva. 3-Añade guindilla y mezcla con el espagueti. 4-Agrega perejil, sal y pimienta al gusto.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-receta" onclick="mostrarDetalles(this)">
+                <img src="img/Pollo al Horno con Limón.jpg" alt="Receta 4">
+                <h3>Pollo al Horno con Limón</h3>
+                <p>El pollo al horno con limón es una receta sencilla pero llena de sabor. El limón y el romero le dan un toque refrescante y aromático, mientras que el horno se encarga de hacerlo tierno y jugoso.</p>
+                <div class="detalles-receta">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>Pechugas de pollo</li>
+                        <li>Limón</li>
+                        <li>Ajo</li>
+                        <li>Aceite de oliva</li>
+                        <li>Romero</li>
+                        <li>Sal</li>
+                        <li>Pimienta</li>
+                    </ul>
+                    <h4>Pasos</h4>
+                    <p>1-Coloca el pollo en una bandeja para hornear. 2-Adereza con jugo de limón, ajo, aceite de oliva, romero, sal y pimienta. 3-Horna a 180°C durante 30 minutos o hasta que esté cocido.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-receta" onclick="mostrarDetalles(this)">
+                <img src="img/Tacos de Pescado.jpg" alt="Receta 5">
+                <h3>Tacos de Pescado</h3>
+                <p>Los tacos de pescado son una opción ligera y sabrosa, con pescado tierno y una mezcla crujiente de col y crema. Son ideales para una comida rápida y deliciosa.</p>
+                <div class="detalles-receta">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>Filetes de pescado</li>
+                        <li>Tortillas</li>
+                        <li>Col rallada</li>
+                        <li>Crema agria</li>
+                        <li>Lima</li>
+                        <li>Sal</li>
+                        <li>Pimienta</li>
+                    </ul>
+                    <h4>Pasos</h4>
+                    <p>1-Cocina el pescado a la plancha. 2-Calienta las tortillas. 3-Sirve el pescado en las tortillas con col rallada y crema agria. 4-Añade jugo de lima, sal y pimienta al gusto.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-receta" onclick="mostrarDetalles(this)">
+                <img src="img/Ensalada César.jpg" alt="Receta 6">
+                <h3>Ensalada César</h3>
+                <p>La ensalada César es un clásico que combina lechuga crujiente con croutons dorados y queso parmesano. Es un plato refrescante y sabroso que puede servirse como acompañamiento o plato principal.</p>
+                <div class="detalles-receta">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>Lechuga romana</li>
+                        <li>Croutons</li>
+                        <li>Queso parmesano</li>
+                        <li>Pechuga de pollo (opcional)</li>
+                        <li>Aderezo César</li>
+                    </ul>
+                    <h4>Pasos</h4>
+                    <p>1-Corta la lechuga y mezcla con croutons y queso parmesano. 2-Añade pollo a la parrilla si se desea. 3-Mezcla con aderezo César y sirve.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="postres" class="grid-recetas">
+            <div class="tarjeta-receta" onclick="mostrarDetalles(this)">
+                <img src="img/Mousse de Chocolate.jpg" alt="Receta 7">
+                <h3>Mousse de Chocolate</h3>
+                <p>Este mousse de chocolate es un postre ligero y aireado, con un rico sabor a chocolate. Ideal para terminar una comida con un toque dulce y elegante.</p>
+                <div class="detalles-receta">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>Chocolate negro</li>
+                        <li>Huevos</li>
+                        <li>Azúcar</li>
+                        <li>Crema para batir</li>
+                    </ul>
+                    <h4>Pasos</h4>
+                    <p>1-Derrite el chocolate. 2-Bate las claras de huevo a punto de nieve. 3-Mezcla y añade las yemas al chocolate. 4-Incorpora las claras y la crema batida. 5-Refrigera por al menos 2 horas.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-receta" onclick="mostrarDetalles(this)">
+                <img src="img/Yogur con Miel y Frutas.jpg" alt="Receta 8">
+                <h3>Yogur con Miel y Frutas</h3>
+                <p>Un postre saludable y fácil de preparar, el yogur con miel y frutas frescas es ligero y refrescante. Perfecto para un toque dulce sin complicaciones.</p>
+                <div class="detalles-receta">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>Yogur natural</li>
+                        <li>Miel</li>
+                        <li>Frutas frescas (como fresas, plátanos, arándanos)</li>
+                    </ul>
+                    <h4>Pasos</h4>
+                    <p>1-Sirve el yogur en un bol. 2-Añade miel al gusto. 3-Completa con frutas frescas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bebidas" class="grid-recetas">
+            <div class="tarjeta-receta" onclick="mostrarDetalles(this)">
+                <img src="img/Limonada Casera.jpeg" alt="Receta 9">
+                <h3>Limonada Casera</h3>
+                <p>La limonada casera es una bebida refrescante y perfecta para los días calurosos. Su sabor ácido y dulce la hace ideal para acompañar cualquier comida.</p>
+                <div class="detalles-receta">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>Limones</li>
+                        <li>Agua</li>
+                        <li>A azúcar</li>
+                        <li>Hielo</li>
+                    </ul>
+                    <h4>Pasos</h4>
+                    <p>1-Exprime el jugo de los limones. 2-Mezcla el jugo con agua y azúcar al gusto. 3-Sirve con hielo.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-receta" onclick="mostrarDetalles(this)">
+                <img src="img/Batido de Plátano y Fresa.jpg" alt="Receta 10">
+                <h3>Batido de Plátano y Fresa</h3>
+                <p>Este batido combina el sabor dulce del plátano con la frescura de las fresas, creando una bebida cremosa y deliciosa. Ideal para un desayuno rápido o una merienda.</p>
+                <div class="detalles-receta">
+                    <h4>Ingredientes</h4>
+                    <ul>
+                        <li>Plátano</li>
+                        <li>Fresas</li>
+                        <li>Leche</li>
+                        <li>Miel</li>
+                    </ul>
+                    <h4>Pasos</h4>
+                    <p>1-Licúa el plátano, las fresas, la leche y la miel. 2-Sirve frío.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
